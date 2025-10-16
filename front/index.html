@@ -1,28 +1,30 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Formulário Simples</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="container">
-      <h1>Formulário de Cadastro</h1>
+      <h1>Cadastro</h1>
 
-      <form id="exercicio01" onsubmit="return validaFormulario(event)">
-        <div class="form-group">
-          <label for="nome">Nome: *</label>
-          <input
-            type="text"
-            id="nome"
-            name="nome"
-            placeholder="Digite o seu nome aqui"
-          />
-        </div>
+      <form id="meuForm" onsubmit="return validarFormulario(event)">
+        <label for="nome">Nome:</label>
+        <input
+          type="text"
+          id="nome"
+          name="nome"
+          placeholder="Digite seu nome"
+        />
+
         <button type="submit">Enviar</button>
       </form>
+
       <div id="mensagem" class="mensagem"></div>
     </div>
-    <script src="index.js"></script>
+
+    <script src="script.js"></script>
   </body>
 </html>
